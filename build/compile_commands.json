@@ -1,0 +1,38 @@
+[
+{
+  "directory": "C:/Users/Alvi/Documents/watchdog-service/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/WatchdogApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\WatchdogApp.dir\\src\\main.cpp.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\src\\main.cpp",
+  "file": "C:/Users/Alvi/Documents/watchdog-service/src/main.cpp",
+  "output": "CMakeFiles/WatchdogApp.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Alvi/Documents/watchdog-service/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/WatchdogApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\WatchdogApp.dir\\src\\utils\\math.cpp.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\src\\utils\\math.cpp",
+  "file": "C:/Users/Alvi/Documents/watchdog-service/src/utils/math.cpp",
+  "output": "CMakeFiles/WatchdogApp.dir/src/utils/math.cpp.obj"
+},
+{
+  "directory": "C:/Users/Alvi/Documents/watchdog-service/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/WatchdogApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\WatchdogApp.dir\\src\\watchdog\\linux_api.cpp.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\src\\watchdog\\linux_api.cpp",
+  "file": "C:/Users/Alvi/Documents/watchdog-service/src/watchdog/linux_api.cpp",
+  "output": "CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj"
+},
+{
+  "directory": "C:/Users/Alvi/Documents/watchdog-service/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/WatchdogApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\WatchdogApp.dir\\src\\watchdog\\platform_api.cpp.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\src\\watchdog\\platform_api.cpp",
+  "file": "C:/Users/Alvi/Documents/watchdog-service/src/watchdog/platform_api.cpp",
+  "output": "CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj"
+},
+{
+  "directory": "C:/Users/Alvi/Documents/watchdog-service/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/WatchdogApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\WatchdogApp.dir\\src\\watchdog\\watchdog.cpp.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\src\\watchdog\\watchdog.cpp",
+  "file": "C:/Users/Alvi/Documents/watchdog-service/src/watchdog/watchdog.cpp",
+  "output": "CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.obj"
+},
+{
+  "directory": "C:/Users/Alvi/Documents/watchdog-service/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/WatchdogApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\WatchdogApp.dir\\src\\watchdog\\windows_api.cpp.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\src\\watchdog\\windows_api.cpp",
+  "file": "C:/Users/Alvi/Documents/watchdog-service/src/watchdog/windows_api.cpp",
+  "output": "CMakeFiles/WatchdogApp.dir/src/watchdog/windows_api.cpp.obj"
+}
+]

@@ -1,0 +1,3 @@
+C:/Users/Alvi/Documents/watchdog-service/build/CMakeFiles/WatchdogApp.dir
+C:/Users/Alvi/Documents/watchdog-service/build/CMakeFiles/edit_cache.dir
+C:/Users/Alvi/Documents/watchdog-service/build/CMakeFiles/rebuild_cache.dir
