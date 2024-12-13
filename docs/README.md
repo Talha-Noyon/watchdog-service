@@ -55,8 +55,8 @@ The configuration file uses JSON format to specify processes and their commands:
 
 ### Prerequisites
 
-- **Linux**: GCC 9.1+ or Clang 9.0+ with `std::filesystem` support.
-- **Windows**: Visual Studio code with C++17 support.
+- **Linux**: Visual Studio code, GCC 9.1+ or Clang 9.0+ with `std::filesystem` support.
+- **Windows**: [Visual Studio code with minGW (C++ Compiler)](https://www.youtube.com/watch?v=DMWD7wfhgNY).
 - **CMake**: Version 3.15 or higher.
 
 ### Installation
@@ -87,7 +87,7 @@ The configuration file uses JSON format to specify processes and their commands:
 
 5. Run the application:
     ```bash
-    ./watchdog
+    ./WatchdogApp
     ```
 
 ---
