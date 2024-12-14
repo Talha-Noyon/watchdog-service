@@ -101,11 +101,26 @@ CMakeFiles/WatchdogApp.dir/src/utils/math.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/WatchdogApp.dir/src/utils/math.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alvi\Documents\watchdog-service\src\utils\math.cpp -o CMakeFiles\WatchdogApp.dir\src\utils\math.cpp.s
 
+CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj: CMakeFiles/WatchdogApp.dir/flags.make
+CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj: CMakeFiles/WatchdogApp.dir/includes_CXX.rsp
+CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj: C:/Users/Alvi/Documents/watchdog-service/src/utils/template_literal.cpp
+CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj: CMakeFiles/WatchdogApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj -MF CMakeFiles\WatchdogApp.dir\src\utils\template_literal.cpp.obj.d -o CMakeFiles\WatchdogApp.dir\src\utils\template_literal.cpp.obj -c C:\Users\Alvi\Documents\watchdog-service\src\utils\template_literal.cpp
+
+CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alvi\Documents\watchdog-service\src\utils\template_literal.cpp > CMakeFiles\WatchdogApp.dir\src\utils\template_literal.cpp.i
+
+CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alvi\Documents\watchdog-service\src\utils\template_literal.cpp -o CMakeFiles\WatchdogApp.dir\src\utils\template_literal.cpp.s
+
 CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj: CMakeFiles/WatchdogApp.dir/flags.make
 CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj: CMakeFiles/WatchdogApp.dir/includes_CXX.rsp
 CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj: C:/Users/Alvi/Documents/watchdog-service/src/watchdog/linux_api.cpp
 CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj: CMakeFiles/WatchdogApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj -MF CMakeFiles\WatchdogApp.dir\src\watchdog\linux_api.cpp.obj.d -o CMakeFiles\WatchdogApp.dir\src\watchdog\linux_api.cpp.obj -c C:\Users\Alvi\Documents\watchdog-service\src\watchdog\linux_api.cpp
 
 CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.i: cmake_force
@@ -120,7 +135,7 @@ CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj: CMakeFiles/Watchdo
 CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj: CMakeFiles/WatchdogApp.dir/includes_CXX.rsp
 CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj: C:/Users/Alvi/Documents/watchdog-service/src/watchdog/platform_api.cpp
 CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj: CMakeFiles/WatchdogApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj -MF CMakeFiles\WatchdogApp.dir\src\watchdog\platform_api.cpp.obj.d -o CMakeFiles\WatchdogApp.dir\src\watchdog\platform_api.cpp.obj -c C:\Users\Alvi\Documents\watchdog-service\src\watchdog\platform_api.cpp
 
 CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.i: cmake_force
@@ -135,7 +150,7 @@ CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.obj: CMakeFiles/WatchdogApp
 CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.obj: CMakeFiles/WatchdogApp.dir/includes_CXX.rsp
 CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.obj: C:/Users/Alvi/Documents/watchdog-service/src/watchdog/watchdog.cpp
 CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.obj: CMakeFiles/WatchdogApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.obj -MF CMakeFiles\WatchdogApp.dir\src\watchdog\watchdog.cpp.obj.d -o CMakeFiles\WatchdogApp.dir\src\watchdog\watchdog.cpp.obj -c C:\Users\Alvi\Documents\watchdog-service\src\watchdog\watchdog.cpp
 
 CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.i: cmake_force
@@ -150,7 +165,7 @@ CMakeFiles/WatchdogApp.dir/src/watchdog/windows_api.cpp.obj: CMakeFiles/Watchdog
 CMakeFiles/WatchdogApp.dir/src/watchdog/windows_api.cpp.obj: CMakeFiles/WatchdogApp.dir/includes_CXX.rsp
 CMakeFiles/WatchdogApp.dir/src/watchdog/windows_api.cpp.obj: C:/Users/Alvi/Documents/watchdog-service/src/watchdog/windows_api.cpp
 CMakeFiles/WatchdogApp.dir/src/watchdog/windows_api.cpp.obj: CMakeFiles/WatchdogApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/WatchdogApp.dir/src/watchdog/windows_api.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/WatchdogApp.dir/src/watchdog/windows_api.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/WatchdogApp.dir/src/watchdog/windows_api.cpp.obj -MF CMakeFiles\WatchdogApp.dir\src\watchdog\windows_api.cpp.obj.d -o CMakeFiles\WatchdogApp.dir\src\watchdog\windows_api.cpp.obj -c C:\Users\Alvi\Documents\watchdog-service\src\watchdog\windows_api.cpp
 
 CMakeFiles/WatchdogApp.dir/src/watchdog/windows_api.cpp.i: cmake_force
@@ -165,6 +180,7 @@ CMakeFiles/WatchdogApp.dir/src/watchdog/windows_api.cpp.s: cmake_force
 WatchdogApp_OBJECTS = \
 "CMakeFiles/WatchdogApp.dir/src/main.cpp.obj" \
 "CMakeFiles/WatchdogApp.dir/src/utils/math.cpp.obj" \
+"CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj" \
 "CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj" \
 "CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj" \
 "CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.obj" \
@@ -175,6 +191,7 @@ WatchdogApp_EXTERNAL_OBJECTS =
 
 WatchdogApp.exe: CMakeFiles/WatchdogApp.dir/src/main.cpp.obj
 WatchdogApp.exe: CMakeFiles/WatchdogApp.dir/src/utils/math.cpp.obj
+WatchdogApp.exe: CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj
 WatchdogApp.exe: CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj
 WatchdogApp.exe: CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj
 WatchdogApp.exe: CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.obj
@@ -185,7 +202,7 @@ WatchdogApp.exe: C:/Users/Alvi/Documents/watchdog-service/include/googletest/bui
 WatchdogApp.exe: CMakeFiles/WatchdogApp.dir/linkLibs.rsp
 WatchdogApp.exe: CMakeFiles/WatchdogApp.dir/objects1.rsp
 WatchdogApp.exe: CMakeFiles/WatchdogApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable WatchdogApp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable WatchdogApp.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\WatchdogApp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

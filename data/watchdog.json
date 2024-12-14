@@ -1,4 +1,8 @@
 {
-  "processes": []
+    "processes": [
+        {
+            "command": "C:\\Users\\Alvi\\AppData\\Roaming\\Telegram Desktop\\Telegram.exe",
+            "name": "selected_process_16856"
+        }
+    ]
 }
-  

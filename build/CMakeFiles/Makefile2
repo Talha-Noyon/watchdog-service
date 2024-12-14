@@ -84,12 +84,12 @@ clean: CMakeFiles/WatchdogApp.dir/clean
 CMakeFiles/WatchdogApp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WatchdogApp.dir\build.make CMakeFiles/WatchdogApp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WatchdogApp.dir\build.make CMakeFiles/WatchdogApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target WatchdogApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target WatchdogApp"
 .PHONY : CMakeFiles/WatchdogApp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/WatchdogApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/WatchdogApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 0
 .PHONY : CMakeFiles/WatchdogApp.dir/rule

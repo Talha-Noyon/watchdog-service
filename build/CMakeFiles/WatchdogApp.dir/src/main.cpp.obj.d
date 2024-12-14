@@ -101,16 +101,9 @@ CMakeFiles/WatchdogApp.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/vector.tcc \
  C:/Users/Alvi/Documents/watchdog-service/include/watchdog/watchdog.h \
- C:/msys64/ucrt64/include/c++/13.1.0/unordered_map \
- C:/msys64/ucrt64/include/c++/13.1.0/bits/unordered_map.h \
- C:/msys64/ucrt64/include/c++/13.1.0/bits/hashtable.h \
- C:/msys64/ucrt64/include/c++/13.1.0/bits/hashtable_policy.h \
- C:/msys64/ucrt64/include/c++/13.1.0/ext/aligned_buffer.h \
- C:/msys64/ucrt64/include/c++/13.1.0/bits/enable_special_members.h \
- C:/msys64/ucrt64/include/c++/13.1.0/bits/node_handle.h \
- C:/msys64/ucrt64/include/c++/13.1.0/bits/erase_if.h \
- C:/msys64/ucrt64/include/c++/13.1.0/fstream \
- C:/msys64/ucrt64/include/c++/13.1.0/istream \
+ C:/Users/Alvi/Documents/watchdog-service/src/utils/template_literal.cpp \
+ C:/msys64/ucrt64/include/c++/13.1.0/iostream \
+ C:/msys64/ucrt64/include/c++/13.1.0/ostream \
  C:/msys64/ucrt64/include/c++/13.1.0/ios \
  C:/msys64/ucrt64/include/c++/13.1.0/exception \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/exception_ptr.h \
@@ -149,9 +142,20 @@ CMakeFiles/WatchdogApp.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/ctype_inline.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_facets.tcc \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/basic_ios.tcc \
- C:/msys64/ucrt64/include/c++/13.1.0/ostream \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/ostream.tcc \
+ C:/msys64/ucrt64/include/c++/13.1.0/istream \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/istream.tcc \
+ C:/msys64/ucrt64/include/c++/13.1.0/sstream \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/sstream.tcc \
+ C:/msys64/ucrt64/include/c++/13.1.0/unordered_map \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/unordered_map.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/hashtable.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/hashtable_policy.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/ext/aligned_buffer.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/enable_special_members.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/node_handle.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/bits/erase_if.h \
+ C:/msys64/ucrt64/include/c++/13.1.0/fstream \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/codecvt.h \
  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/basic_file.h \
  C:/msys64/ucrt64/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++io.h \
@@ -243,8 +247,6 @@ CMakeFiles/WatchdogApp.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/locale_conv.h \
  C:/msys64/ucrt64/include/c++/13.1.0/iomanip \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/quoted_string.h \
- C:/msys64/ucrt64/include/c++/13.1.0/sstream \
- C:/msys64/ucrt64/include/c++/13.1.0/bits/sstream.tcc \
  C:/msys64/ucrt64/include/c++/13.1.0/codecvt \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/fs_dir.h \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/fs_ops.h \
@@ -254,5 +256,4 @@ CMakeFiles/WatchdogApp.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.1.0/pstl/glue_numeric_defs.h \
  C:/msys64/ucrt64/include/c++/13.1.0/any \
  C:/msys64/ucrt64/include/c++/13.1.0/chrono \
- C:/msys64/ucrt64/include/c++/13.1.0/iostream \
  C:/msys64/ucrt64/include/c++/13.1.0/bits/this_thread_sleep.h

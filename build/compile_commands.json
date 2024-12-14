@@ -13,6 +13,12 @@
 },
 {
   "directory": "C:/Users/Alvi/Documents/watchdog-service/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/WatchdogApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\WatchdogApp.dir\\src\\utils\\template_literal.cpp.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\src\\utils\\template_literal.cpp",
+  "file": "C:/Users/Alvi/Documents/watchdog-service/src/utils/template_literal.cpp",
+  "output": "CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj"
+},
+{
+  "directory": "C:/Users/Alvi/Documents/watchdog-service/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/WatchdogApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\WatchdogApp.dir\\src\\watchdog\\linux_api.cpp.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\src\\watchdog\\linux_api.cpp",
   "file": "C:/Users/Alvi/Documents/watchdog-service/src/watchdog/linux_api.cpp",
   "output": "CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj"

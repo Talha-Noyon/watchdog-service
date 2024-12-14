@@ -176,6 +176,30 @@ src/utils/math.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WatchdogApp.dir\build.make CMakeFiles/WatchdogApp.dir/src/utils/math.cpp.s
 .PHONY : src/utils/math.cpp.s
 
+src/utils/template_literal.obj: src/utils/template_literal.cpp.obj
+.PHONY : src/utils/template_literal.obj
+
+# target to build an object file
+src/utils/template_literal.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WatchdogApp.dir\build.make CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj
+.PHONY : src/utils/template_literal.cpp.obj
+
+src/utils/template_literal.i: src/utils/template_literal.cpp.i
+.PHONY : src/utils/template_literal.i
+
+# target to preprocess a source file
+src/utils/template_literal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WatchdogApp.dir\build.make CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.i
+.PHONY : src/utils/template_literal.cpp.i
+
+src/utils/template_literal.s: src/utils/template_literal.cpp.s
+.PHONY : src/utils/template_literal.s
+
+# target to generate assembly for a file
+src/utils/template_literal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\WatchdogApp.dir\build.make CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.s
+.PHONY : src/utils/template_literal.cpp.s
+
 src/watchdog/linux_api.obj: src/watchdog/linux_api.cpp.obj
 .PHONY : src/watchdog/linux_api.obj
 
@@ -287,6 +311,9 @@ help:
 	@echo ... src/utils/math.obj
 	@echo ... src/utils/math.i
 	@echo ... src/utils/math.s
+	@echo ... src/utils/template_literal.obj
+	@echo ... src/utils/template_literal.i
+	@echo ... src/utils/template_literal.s
 	@echo ... src/watchdog/linux_api.obj
 	@echo ... src/watchdog/linux_api.i
 	@echo ... src/watchdog/linux_api.s

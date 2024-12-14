@@ -45,6 +45,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.31.1/CMakeRCCompiler.cmake"
   "CMakeFiles/3.31.1/CMakeSystem.cmake"
   "C:/Users/Alvi/Documents/watchdog-service/data/watchdog.json"
+  "C:/Users/Alvi/Documents/watchdog-service/log/watchdog.log"
   )
 
 # The corresponding makefile is:
@@ -56,6 +57,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "data/watchdog.json"
+  "log/watchdog.log"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

@@ -1,4 +1,5 @@
 #include "watchdog/platform_api.h"
+#include "utils/template_literal.cpp"
 #include <unordered_map>
 #include <fstream>
 #include <nlohmann/json.hpp>
@@ -40,9 +41,11 @@ class Watchdog {
         }
 
         void monitorProcesses() {
+            // logEvent("monitorProcesses");
+            std::cout << "monitorProcesses" << std::endl;
             for (const auto& [name, command] : monitoredProcesses) {
                 bool isRunning = false;
-                auto processes = platformApi.getRunningProcesses();
+                std::vector<ProcessInfo> processes = platformApi.getRunningProcesses();
 
                 for (const auto& proc : processes) {
                     if (proc.path == command) {
@@ -52,7 +55,9 @@ class Watchdog {
                 }
 
                 if (!isRunning) {
-                    std::cout << "Process " << name << " is not running. Restarting...\n";
+                    std::string info = templateLiteral("{} is not running.", name);
+                    std::cout << info << "Restarting...\n";
+                    logEvent(info);
                     platformApi.startProcess(command, {});
                 }
             }
@@ -64,22 +69,18 @@ class Watchdog {
 
             // Load the configuration file if it exists
             std::ifstream config_file(config_path);
-            if (config_file.is_open())
-            {
-                try
-                {
+            if (config_file.is_open()) {
+                try {
                     config_file >> config_json;
                 }
-                catch (...)
-                {
+                catch (...) {
                     // If JSON is invalid, start with an empty configuration
                     config_json = nlohmann::json::object();
                 }
             }
 
             // Ensure "processes" array exists in the configuration
-            if (!config_json.contains("processes") || !config_json["processes"].is_array())
-            {
+            if (!config_json.contains("processes") || !config_json["processes"].is_array()) {
                 config_json["processes"] = nlohmann::json::array();
             }
 
@@ -97,53 +98,54 @@ class Watchdog {
             std::string input;
 
             std::cout << "Available processes:\n";
-            for (size_t i = 0; i < processes.size(); ++i)
-            {
-                std::cout << i << ": PID=" << processes[i].pid
+            for (size_t i = 0; i < processes.size(); ++i) {
+                std::cout <<"ID=" << i
                         << ", Path=" << processes[i].path << "\n";
             }
 
             std::cout << "Enter the process numbers to select (type 'done' to finish):\n";
-            while (true)
-            {
+            while (true) {
                 std::cout << "Process number: ";
                 std::getline(std::cin, input);
 
-                if (input == "done")
-                {
+                if (input == "done") {
                     break; // Exit the loop if the user types "done"
                 }
 
-                try
-                {
+                try {
                     int process_number = std::stoi(input);
-                    if (process_number >= 0 && process_number < static_cast<int>(processes.size()))
-                    {
+                    if (process_number >= 0 && process_number < static_cast<int>(processes.size())) {
                         selected_processes.push_back(process_number);
                         std::cout << "Process " << process_number << " added.\n";
                     }
-                    else
-                    {
+                    else {
                         std::cout << "Invalid process number. Please try again.\n";
                     }
                 }
-                catch (const std::exception &)
-                {
+                catch (const std::exception &) {
                     std::cout << "Invalid input. Please enter a number or 'done' to finish.\n";
                 }
             }
 
             return selected_processes;
         }
+        
+        std::string getTimestamp() {
+            std::time_t now = std::time(nullptr);
+            char buf[20];
+            std::strftime(buf, sizeof(buf), "%Y-%m-%d %H:%M:%S", std::localtime(&now));
+            return buf;
+        }
 
+        void logEvent(const std::string message) {
+            std::ofstream log_file("log/watchdog.log", std::ios::app);
+            log_file << getTimestamp() << " - " << message << std::endl;
+        }
+        
     public:
         Watchdog(const std::string& configPath) {
             configFilePath = configPath;
             lastConfigCheck = std::chrono::steady_clock::now();
-            std::cout << "configPath: " << configPath  << std::endl;
-        }
-
-        void run() {
             // Retrieve the list of running processes
             std::vector<ProcessInfo> processes = platformApi.getRunningProcesses();
 
@@ -161,20 +163,22 @@ class Watchdog {
                 updateConfig(configFilePath, "selected_process_" + processes[index].pid, processes[index].path);
             }
 
-            std::cout << "Configuration updated successfully!" << std::endl;
+            std::cout << "Configuration added successfully!" << std::endl;
+        }
 
+        void run() {
             while (true) {
                 auto now = std::chrono::steady_clock::now();
                 
-                // Periodically reload configuration (e.g., every 2 seconds)
-                if (std::chrono::duration_cast<std::chrono::seconds>(now - lastConfigCheck).count() >= 2) {
+                // Periodically reload configuration (e.g., every 10 seconds)
+                if (std::chrono::duration_cast<std::chrono::seconds>(now - lastConfigCheck).count() >= 10) {
+                    std::cout << "loadConfiguration" << std::endl;
                     loadConfiguration();
                     lastConfigCheck = now;
                 }
 
                 // Monitor processes
                 monitorProcesses();
-                std::cout << "Sleep for a short duration before checking again" << std::endl;
                 // Sleep for a short duration before checking again
                 std::this_thread::sleep_for(std::chrono::seconds(5));
             }

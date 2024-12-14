@@ -19,11 +19,14 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/include/googletest/googletest/include
 )
 
-set(CONFIG_DIR ${CMAKE_BINARY_DIR}/data)
-file(MAKE_DIRECTORY ${CONFIG_DIR})
+set(CONFIG_DATA_DIR ${CMAKE_BINARY_DIR}/data)
+set(CONFIG_LOG_DIR ${CMAKE_BINARY_DIR}/log)
+file(MAKE_DIRECTORY ${CONFIG_DATA_DIR})
+file(MAKE_DIRECTORY ${CONFIG_LOG_DIR})
 
-message(STATUS "CONFIG_DIR: ${CONFIG_DIR}")
-configure_file(data/watchdog.json ${CONFIG_DIR}/watchdog.json COPYONLY) 
+message(STATUS "CONFIG_DATA_DIR: ${CONFIG_DATA_DIR}")
+configure_file(data/watchdog.json ${CONFIG_DATA_DIR}/watchdog.json COPYONLY) 
+configure_file(log/watchdog.log ${CONFIG_LOG_DIR}/watchdog.log COPYONLY) 
 
 add_executable(${PROJECT_NAME} ${SRC})
 target_link_libraries(${PROJECT_NAME} PRIVATE ${GTEST_LIBRARY})
