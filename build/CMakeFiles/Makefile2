@@ -63,19 +63,88 @@ CMAKE_BINARY_DIR = C:\Users\Alvi\Documents\watchdog-service\build
 
 # The main recursive "all" target.
 all: CMakeFiles/WatchdogApp.dir/all
+all: include/googletest/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/WatchdogApp.dir/codegen
+codegen: include/googletest/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: include/googletest/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/WatchdogApp.dir/clean
+clean: include/googletest/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory include/googletest
+
+# Recursive "all" directory target.
+include/googletest/all: include/googletest/googlemock/all
+.PHONY : include/googletest/all
+
+# Recursive "codegen" directory target.
+include/googletest/codegen: include/googletest/googlemock/codegen
+.PHONY : include/googletest/codegen
+
+# Recursive "preinstall" directory target.
+include/googletest/preinstall: include/googletest/googlemock/preinstall
+.PHONY : include/googletest/preinstall
+
+# Recursive "clean" directory target.
+include/googletest/clean: include/googletest/googlemock/clean
+.PHONY : include/googletest/clean
+
+#=============================================================================
+# Directory level rules for directory include/googletest/googlemock
+
+# Recursive "all" directory target.
+include/googletest/googlemock/all: include/googletest/googlemock/CMakeFiles/gmock.dir/all
+include/googletest/googlemock/all: include/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+include/googletest/googlemock/all: include/googletest/googletest/all
+.PHONY : include/googletest/googlemock/all
+
+# Recursive "codegen" directory target.
+include/googletest/googlemock/codegen: include/googletest/googlemock/CMakeFiles/gmock.dir/codegen
+include/googletest/googlemock/codegen: include/googletest/googlemock/CMakeFiles/gmock_main.dir/codegen
+include/googletest/googlemock/codegen: include/googletest/googletest/codegen
+.PHONY : include/googletest/googlemock/codegen
+
+# Recursive "preinstall" directory target.
+include/googletest/googlemock/preinstall: include/googletest/googletest/preinstall
+.PHONY : include/googletest/googlemock/preinstall
+
+# Recursive "clean" directory target.
+include/googletest/googlemock/clean: include/googletest/googlemock/CMakeFiles/gmock.dir/clean
+include/googletest/googlemock/clean: include/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+include/googletest/googlemock/clean: include/googletest/googletest/clean
+.PHONY : include/googletest/googlemock/clean
+
+#=============================================================================
+# Directory level rules for directory include/googletest/googletest
+
+# Recursive "all" directory target.
+include/googletest/googletest/all: include/googletest/googletest/CMakeFiles/gtest.dir/all
+include/googletest/googletest/all: include/googletest/googletest/CMakeFiles/gtest_main.dir/all
+.PHONY : include/googletest/googletest/all
+
+# Recursive "codegen" directory target.
+include/googletest/googletest/codegen: include/googletest/googletest/CMakeFiles/gtest.dir/codegen
+include/googletest/googletest/codegen: include/googletest/googletest/CMakeFiles/gtest_main.dir/codegen
+.PHONY : include/googletest/googletest/codegen
+
+# Recursive "preinstall" directory target.
+include/googletest/googletest/preinstall:
+.PHONY : include/googletest/googletest/preinstall
+
+# Recursive "clean" directory target.
+include/googletest/googletest/clean: include/googletest/googletest/CMakeFiles/gtest.dir/clean
+include/googletest/googletest/clean: include/googletest/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : include/googletest/googletest/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/WatchdogApp.dir
@@ -84,12 +153,12 @@ clean: CMakeFiles/WatchdogApp.dir/clean
 CMakeFiles/WatchdogApp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WatchdogApp.dir\build.make CMakeFiles/WatchdogApp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WatchdogApp.dir\build.make CMakeFiles/WatchdogApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target WatchdogApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target WatchdogApp"
 .PHONY : CMakeFiles/WatchdogApp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/WatchdogApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/WatchdogApp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 0
 .PHONY : CMakeFiles/WatchdogApp.dir/rule
@@ -107,6 +176,131 @@ CMakeFiles/WatchdogApp.dir/codegen:
 CMakeFiles/WatchdogApp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\WatchdogApp.dir\build.make CMakeFiles/WatchdogApp.dir/clean
 .PHONY : CMakeFiles/WatchdogApp.dir/clean
+
+#=============================================================================
+# Target rules for target include/googletest/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+include/googletest/googlemock/CMakeFiles/gmock.dir/all: include/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f include\googletest\googlemock\CMakeFiles\gmock.dir\build.make include/googletest/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) $(MAKESILENT) -f include\googletest\googlemock\CMakeFiles\gmock.dir\build.make include/googletest/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=8,9 "Built target gmock"
+.PHONY : include/googletest/googlemock/CMakeFiles/gmock.dir/all
+
+# Build rule for subdir invocation for target.
+include/googletest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 include/googletest/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 0
+.PHONY : include/googletest/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: include/googletest/googlemock/CMakeFiles/gmock.dir/rule
+.PHONY : gmock
+
+# codegen rule for target.
+include/googletest/googlemock/CMakeFiles/gmock.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f include\googletest\googlemock\CMakeFiles\gmock.dir\build.make include/googletest/googlemock/CMakeFiles/gmock.dir/codegen
+.PHONY : include/googletest/googlemock/CMakeFiles/gmock.dir/codegen
+
+# clean rule for target.
+include/googletest/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) $(MAKESILENT) -f include\googletest\googlemock\CMakeFiles\gmock.dir\build.make include/googletest/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : include/googletest/googlemock/CMakeFiles/gmock.dir/clean
+
+#=============================================================================
+# Target rules for target include/googletest/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+include/googletest/googlemock/CMakeFiles/gmock_main.dir/all: include/googletest/googlemock/CMakeFiles/gmock.dir/all
+include/googletest/googlemock/CMakeFiles/gmock_main.dir/all: include/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f include\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make include/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f include\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make include/googletest/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=10,11 "Built target gmock_main"
+.PHONY : include/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Build rule for subdir invocation for target.
+include/googletest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 include/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 0
+.PHONY : include/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: include/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+.PHONY : gmock_main
+
+# codegen rule for target.
+include/googletest/googlemock/CMakeFiles/gmock_main.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f include\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make include/googletest/googlemock/CMakeFiles/gmock_main.dir/codegen
+.PHONY : include/googletest/googlemock/CMakeFiles/gmock_main.dir/codegen
+
+# clean rule for target.
+include/googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f include\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make include/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : include/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+#=============================================================================
+# Target rules for target include/googletest/googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+include/googletest/googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) $(MAKESILENT) -f include\googletest\googletest\CMakeFiles\gtest.dir\build.make include/googletest/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) $(MAKESILENT) -f include\googletest\googletest\CMakeFiles\gtest.dir\build.make include/googletest/googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=12,13 "Built target gtest"
+.PHONY : include/googletest/googletest/CMakeFiles/gtest.dir/all
+
+# Build rule for subdir invocation for target.
+include/googletest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 include/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 0
+.PHONY : include/googletest/googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: include/googletest/googletest/CMakeFiles/gtest.dir/rule
+.PHONY : gtest
+
+# codegen rule for target.
+include/googletest/googletest/CMakeFiles/gtest.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f include\googletest\googletest\CMakeFiles\gtest.dir\build.make include/googletest/googletest/CMakeFiles/gtest.dir/codegen
+.PHONY : include/googletest/googletest/CMakeFiles/gtest.dir/codegen
+
+# clean rule for target.
+include/googletest/googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f include\googletest\googletest\CMakeFiles\gtest.dir\build.make include/googletest/googletest/CMakeFiles/gtest.dir/clean
+.PHONY : include/googletest/googletest/CMakeFiles/gtest.dir/clean
+
+#=============================================================================
+# Target rules for target include/googletest/googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+include/googletest/googletest/CMakeFiles/gtest_main.dir/all: include/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f include\googletest\googletest\CMakeFiles\gtest_main.dir\build.make include/googletest/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f include\googletest\googletest\CMakeFiles\gtest_main.dir\build.make include/googletest/googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles --progress-num=14,15 "Built target gtest_main"
+.PHONY : include/googletest/googletest/CMakeFiles/gtest_main.dir/all
+
+# Build rule for subdir invocation for target.
+include/googletest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 include/googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alvi\Documents\watchdog-service\build\CMakeFiles 0
+.PHONY : include/googletest/googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: include/googletest/googletest/CMakeFiles/gtest_main.dir/rule
+.PHONY : gtest_main
+
+# codegen rule for target.
+include/googletest/googletest/CMakeFiles/gtest_main.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f include\googletest\googletest\CMakeFiles\gtest_main.dir\build.make include/googletest/googletest/CMakeFiles/gtest_main.dir/codegen
+.PHONY : include/googletest/googletest/CMakeFiles/gtest_main.dir/codegen
+
+# clean rule for target.
+include/googletest/googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f include\googletest\googletest\CMakeFiles\gtest_main.dir\build.make include/googletest/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : include/googletest/googletest/CMakeFiles/gtest_main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

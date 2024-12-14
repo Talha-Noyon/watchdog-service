@@ -13,12 +13,6 @@
 },
 {
   "directory": "C:/Users/Alvi/Documents/watchdog-service/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/WatchdogApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\WatchdogApp.dir\\src\\utils\\template_literal.cpp.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\src\\utils\\template_literal.cpp",
-  "file": "C:/Users/Alvi/Documents/watchdog-service/src/utils/template_literal.cpp",
-  "output": "CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj"
-},
-{
-  "directory": "C:/Users/Alvi/Documents/watchdog-service/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/WatchdogApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\WatchdogApp.dir\\src\\watchdog\\linux_api.cpp.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\src\\watchdog\\linux_api.cpp",
   "file": "C:/Users/Alvi/Documents/watchdog-service/src/watchdog/linux_api.cpp",
   "output": "CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj"
@@ -40,5 +34,29 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/WatchdogApp.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\WatchdogApp.dir\\src\\watchdog\\windows_api.cpp.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\src\\watchdog\\windows_api.cpp",
   "file": "C:/Users/Alvi/Documents/watchdog-service/src/watchdog/windows_api.cpp",
   "output": "CMakeFiles/WatchdogApp.dir/src/watchdog/windows_api.cpp.obj"
+},
+{
+  "directory": "C:/Users/Alvi/Documents/watchdog-service/build/include/googletest/googlemock",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\include\\googletest\\googlemock\\src\\gmock-all.cc",
+  "file": "C:/Users/Alvi/Documents/watchdog-service/include/googletest/googlemock/src/gmock-all.cc",
+  "output": "include/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
+},
+{
+  "directory": "C:/Users/Alvi/Documents/watchdog-service/build/include/googletest/googlemock",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\include\\googletest\\googlemock\\src\\gmock_main.cc",
+  "file": "C:/Users/Alvi/Documents/watchdog-service/include/googletest/googlemock/src/gmock_main.cc",
+  "output": "include/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
+},
+{
+  "directory": "C:/Users/Alvi/Documents/watchdog-service/build/include/googletest/googletest",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\include\\googletest\\googletest\\src\\gtest-all.cc",
+  "file": "C:/Users/Alvi/Documents/watchdog-service/include/googletest/googletest/src/gtest-all.cc",
+  "output": "include/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+},
+{
+  "directory": "C:/Users/Alvi/Documents/watchdog-service/build/include/googletest/googletest",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c C:\\Users\\Alvi\\Documents\\watchdog-service\\include\\googletest\\googletest\\src\\gtest_main.cc",
+  "file": "C:/Users/Alvi/Documents/watchdog-service/include/googletest/googletest/src/gtest_main.cc",
+  "output": "include/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
 }
 ]

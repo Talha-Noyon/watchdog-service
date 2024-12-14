@@ -9,8 +9,10 @@ PlatformAPI& PlatformAPI::create() {
 #ifdef _WIN32
     static WindowsAPI win_api;
     return win_api;
-#else
+#elif defined(__linux__)
     static LinuxAPI linux_api;
     return linux_api;
+#else
+    throw std::runtime_error("Unsupported OS");
 #endif
 }

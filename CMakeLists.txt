@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 file(GLOB_RECURSE SRC
     ${CMAKE_SOURCE_DIR}/src/*.cpp
 )
+add_subdirectory(${CMAKE_SOURCE_DIR}/include/googletest)
 set(GTEST_LIBRARY 
     ${CMAKE_SOURCE_DIR}/include/googletest/build/lib/libgtest.a
     ${CMAKE_SOURCE_DIR}/include/googletest/build/lib/libgtest_main.a
@@ -24,7 +25,7 @@ set(CONFIG_LOG_DIR ${CMAKE_BINARY_DIR}/log)
 file(MAKE_DIRECTORY ${CONFIG_DATA_DIR})
 file(MAKE_DIRECTORY ${CONFIG_LOG_DIR})
 
-message(STATUS "CONFIG_DATA_DIR: ${CONFIG_DATA_DIR}")
+message(STATUS "CMAKE_SOURCE_DIR: ${CMAKE_SOURCE_DIR}")
 configure_file(data/watchdog.json ${CONFIG_DATA_DIR}/watchdog.json COPYONLY) 
 configure_file(log/watchdog.log ${CONFIG_LOG_DIR}/watchdog.log COPYONLY) 
 

@@ -10,7 +10,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Alvi/Documents/watchdog-service/src/main.cpp" "CMakeFiles/WatchdogApp.dir/src/main.cpp.obj" "gcc" "CMakeFiles/WatchdogApp.dir/src/main.cpp.obj.d"
   "C:/Users/Alvi/Documents/watchdog-service/src/utils/math.cpp" "CMakeFiles/WatchdogApp.dir/src/utils/math.cpp.obj" "gcc" "CMakeFiles/WatchdogApp.dir/src/utils/math.cpp.obj.d"
-  "C:/Users/Alvi/Documents/watchdog-service/src/utils/template_literal.cpp" "CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj" "gcc" "CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj.d"
   "C:/Users/Alvi/Documents/watchdog-service/src/watchdog/linux_api.cpp" "CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj" "gcc" "CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj.d"
   "C:/Users/Alvi/Documents/watchdog-service/src/watchdog/platform_api.cpp" "CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj" "gcc" "CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj.d"
   "C:/Users/Alvi/Documents/watchdog-service/src/watchdog/watchdog.cpp" "CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.obj" "gcc" "CMakeFiles/WatchdogApp.dir/src/watchdog/watchdog.cpp.obj.d"

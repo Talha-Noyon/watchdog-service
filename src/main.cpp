@@ -11,6 +11,7 @@ int main(int argc, char* argv[]) {
     const std::string configFilePath = "data/watchdog.json";
     // Create and run the watchdog
     Watchdog watchdog(configFilePath);
-    watchdog.run(); // Blocking loop
+    watchdog.initializeFromSelection();
+    watchdog.run();
     return 0;
 }

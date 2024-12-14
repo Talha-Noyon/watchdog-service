@@ -3,8 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/WatchdogApp.dir/src/main.cpp.obj.d"
   "CMakeFiles/WatchdogApp.dir/src/utils/math.cpp.obj"
   "CMakeFiles/WatchdogApp.dir/src/utils/math.cpp.obj.d"
-  "CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj"
-  "CMakeFiles/WatchdogApp.dir/src/utils/template_literal.cpp.obj.d"
   "CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj"
   "CMakeFiles/WatchdogApp.dir/src/watchdog/linux_api.cpp.obj.d"
   "CMakeFiles/WatchdogApp.dir/src/watchdog/platform_api.cpp.obj"
