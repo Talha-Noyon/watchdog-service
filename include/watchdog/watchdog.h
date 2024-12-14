@@ -33,6 +33,8 @@ class Watchdog {
         void initializeFromSelection();
 
         void run();
+
+        std::unordered_map<std::string, std::string> getMonitoredProcesses();
 };
 
 #endif // WATCHDOG_API_H

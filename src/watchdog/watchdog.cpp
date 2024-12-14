@@ -142,3 +142,7 @@ void Watchdog::run() {
         std::this_thread::sleep_for(std::chrono::seconds(5));
     }
 }
+
+std::unordered_map<std::string, std::string> Watchdog::getMonitoredProcesses() {
+    return monitoredProcesses;
+}
