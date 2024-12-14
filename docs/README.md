@@ -62,17 +62,27 @@ The configuration file uses JSON format to specify processes and their commands:
     git clone https://github.com/Talha-Noyon/watchdog-service.git
     cd watchdog-service
     ```
-
-4. Build the project using git bash:
+### Build Process Automated
+Fully compatible with Visual Studio code
+ 
+### Build Process Manual
+1. Build the project using git bash for linux:
     ```bash
-    rm -rf build && mkdir build && cd build
-    cmake ..
+    mkdir build && cd build && cmake ..
     make
     ```
-
-5. Run the application:
+2. Build the project using git bash for windows:
+    ```bash
+    mkdir build && cd build && cmake -G "MinGW Makefiles" ..
+    make
+    ```
+3. Run the application:
     ```bash
     ./WatchdogApp
+    ```
+4. Run the test application:
+    ```bash
+    ./WatchdogApp_tests
     ```
 
 ---
