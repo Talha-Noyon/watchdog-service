@@ -16,21 +16,6 @@ A lightweight, cross-platform watchdog service written in C++ to monitor and man
 - **Testing Coverage**: Comprehensive unit tests for components and integration tests for workflows.
 ---
 
-## Requirements
-
-1. **Configuration Requirements**:
-   - A plain text configuration file in JSON format (example below).
-   - Dynamically reloads when the file is modified.
-   - Describes the list of processes/applications and their startup parameters.
-
-2. **Process Requirements**:
-   - Monitors processes on startup and starts them if they are not running.
-   - Automatically starts new processes added to the configuration.
-   - Stops monitoring processes removed from the configuration.
-   - Restarts processes if they are stopped or killed.
-
----
-
 ## Configuration File
 
 The configuration file uses JSON format to specify processes and their commands:
