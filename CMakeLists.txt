@@ -7,11 +7,6 @@ file(GLOB_RECURSE SRC
     ${CMAKE_SOURCE_DIR}/src/*.cpp
 )
 add_subdirectory(${CMAKE_SOURCE_DIR}/include/googletest)
-set(GTEST_LIBRARY 
-    ${CMAKE_SOURCE_DIR}/include/googletest/build/lib/libgtest.a
-    ${CMAKE_SOURCE_DIR}/include/googletest/build/lib/libgtest_main.a
-)
-
 include_directories(
     ${CMAKE_SOURCE_DIR}/src
     ${CMAKE_SOURCE_DIR}/include/
@@ -30,5 +25,5 @@ configure_file(data/watchdog.json ${CONFIG_DATA_DIR}/watchdog.json COPYONLY)
 configure_file(log/watchdog.log ${CONFIG_LOG_DIR}/watchdog.log COPYONLY) 
 
 add_executable(${PROJECT_NAME} ${SRC})
-target_link_libraries(${PROJECT_NAME} PRIVATE ${GTEST_LIBRARY})
+target_link_libraries(${PROJECT_NAME} PRIVATE gtest gmock)
 
