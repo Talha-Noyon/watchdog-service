@@ -6,6 +6,11 @@ set(CMAKE_CXX_STANDARD 17)
 file(GLOB_RECURSE SRC
     ${CMAKE_SOURCE_DIR}/src/*.cpp
 )
+file(GLOB_RECURSE TEST_SRC
+    ${CMAKE_SOURCE_DIR}/src/utils/*.cpp
+    ${CMAKE_SOURCE_DIR}/src/watchdog/*.cpp
+    ${CMAKE_SOURCE_DIR}/test/*.cpp
+)
 add_subdirectory(${CMAKE_SOURCE_DIR}/include/googletest)
 include_directories(
     ${CMAKE_SOURCE_DIR}/src
@@ -25,5 +30,9 @@ configure_file(data/watchdog.json ${CONFIG_DATA_DIR}/watchdog.json COPYONLY)
 configure_file(log/watchdog.log ${CONFIG_LOG_DIR}/watchdog.log COPYONLY) 
 
 add_executable(${PROJECT_NAME} ${SRC})
-target_link_libraries(${PROJECT_NAME} PRIVATE gtest gmock)
+
+enable_testing()
+add_executable(${PROJECT_NAME}_tests ${TEST_SRC})
+target_link_libraries(${PROJECT_NAME}_tests PRIVATE gtest gtest_main gmock)
+add_test(NAME WatchdogTests COMMAND ${PROJECT_NAME}_tests)
 
